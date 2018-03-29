@@ -3,6 +3,7 @@
 #pragma once
 
 #include <stdlib.h>
+#include <sys/types.h>
 
 typedef struct list_s {
 	ssize_t val;

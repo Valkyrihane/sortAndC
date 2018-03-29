@@ -1,8 +1,9 @@
 # Makefile
 
-CC	=	gcc -O3
+CC	=	gcc -std=c11 -O3
 
-CFLAGS	=	-W -Wall -Wextra
+CFLAGS	=	-Wall -Wextra
+CFLAGS	+=	-Wshadow -Waggregate-return -Wunreachable-code -Winit-self
 CPPFLAGS=	-I include/
 
 SRC	=	src/main.c		\
