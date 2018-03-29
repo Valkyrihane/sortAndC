@@ -2,7 +2,8 @@
 
 #include "sort.h"
 
-void insert_sort(list_t *list)
+void insert_sort(ssize_t *tab, size_t size)
 {
-	(void)list;
+	(void)tab;
+	(void)size;
 }

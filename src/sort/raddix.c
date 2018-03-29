@@ -2,7 +2,8 @@
 
 #include "sort.h"
 
-void raddix_sort(list_t *list)
+void raddix_sort(ssize_t *tab, size_t size)
 {
-	(void)list;
+	(void)tab;
+	(void)size;
 }

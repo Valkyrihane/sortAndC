@@ -8,7 +8,7 @@ CPPFLAGS=	-I include/
 
 SRC	=	src/main.c		\
 		src/usage.c		\
-		src/list.c		\
+		src/tab.c		\
 
 SRC 	+=	src/sort/raddix.c	\
 		src/sort/bubble.c	\

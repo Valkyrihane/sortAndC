@@ -17,7 +17,7 @@ static int check_algo_name(const char **algo_tab, const char *name)
 int main(int argc, char const *argv[])
 {
 	int idx = 0;
-	list_t *list = NULL;
+	ssize_t tab[argc - 2];
 
 	if (argc <= 2
 	    || !strcmp(argv[1], "-h")
@@ -26,9 +26,10 @@ int main(int argc, char const *argv[])
 		return (EXIT_SUCCESS);
 	}
 	idx = check_algo_name(ALGO_TAB, argv[1]);
-	if (idx == -1 || init_list(list, argv + 2))
+	if (idx == -1)
 		return (EXIT_FAILURE);
-	fptr_tab[idx](list);
-	dump_list(list);
+	init_tab(tab, argv + 2);
+	fptr_tab[idx](tab, argc - 2);
+	dump_tab(tab, argc - 2);
 	return (EXIT_SUCCESS);
 }
