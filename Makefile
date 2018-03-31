@@ -13,6 +13,7 @@ SRC	=	src/main.c		\
 SRC 	+=	src/sort/raddix.c	\
 		src/sort/bubble.c	\
 		src/sort/insert.c	\
+		src/sort/selection.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

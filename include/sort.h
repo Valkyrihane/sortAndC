@@ -11,12 +11,17 @@
 
 #define ALGO_TAB (const char *[]) {	\
 			"raddix",	\
+			"selection",	\
 			"bubble",	\
 			"insert",	\
 			NULL,		\
 }
 
-#define SWAP(a, b) { a ^= b; b ^= a; a ^= b; }
+#define SWAP(a, b) {\
+		__typeof__(a) tmp = a;\
+		a = b;\
+		b = tmp;\
+	}
 
 /*
 **** Functions Prototypes
@@ -30,13 +35,10 @@ void init_tab(ssize_t *, const char **);
 /* usage.c */
 void usage(const char **, const char *);
 
-/* raddix.c */
+/* SORT */
 void raddix_sort(ssize_t [], size_t);
-
-/* bubble.c */
+void selection_sort(ssize_t [], size_t);
 void bubble_sort(ssize_t [], size_t);
-
-/* insert.c */
 void insert_sort(ssize_t [], size_t);
 
 /*
@@ -47,6 +49,7 @@ typedef void (*fptr)(ssize_t [], size_t);
 
 static const fptr fptr_tab[] = {
 	&raddix_sort,
+	&selection_sort,
 	&bubble_sort,
 	&insert_sort,
 };
