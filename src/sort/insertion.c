@@ -2,7 +2,7 @@
 
 #include "sort.h"
 
-void insert_sort(ssize_t *tab, size_t size)
+void insertion_sort(ssize_t *tab, size_t size)
 {
 	size_t extracted = 0;
 

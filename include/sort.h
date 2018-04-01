@@ -13,7 +13,7 @@
 			"raddix",	\
 			"selection",	\
 			"bubble",	\
-			"insert",	\
+			"insertion",	\
 			NULL,		\
 }
 
@@ -39,7 +39,7 @@ void usage(const char **, const char *);
 void raddix_sort(ssize_t [], size_t);
 void selection_sort(ssize_t [], size_t);
 void bubble_sort(ssize_t [], size_t);
-void insert_sort(ssize_t [], size_t);
+void insertion_sort(ssize_t [], size_t);
 
 /*
 **** Function Pointers
@@ -51,5 +51,5 @@ static const fptr fptr_tab[] = {
 	&raddix_sort,
 	&selection_sort,
 	&bubble_sort,
-	&insert_sort,
+	&insertion_sort,
 };
