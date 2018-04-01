@@ -17,7 +17,7 @@ SRC 	+=	src/sort/raddix.c	\
 
 OBJ	=	$(SRC:.c=.o)
 
-NAME	=	linkedSort
+NAME	=	sortAndC
 
 all	:	$(NAME)
 
