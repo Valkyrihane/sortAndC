@@ -27,10 +27,12 @@
 **** Functions Prototypes
 */
 
+/* sort_and.c */
+int sortAndC(const char *, const char *);
+
 /* tab.c */
-void swap(ssize_t *, ssize_t *);
 void dump_tab(const ssize_t*, size_t);
-void init_tab(ssize_t *, const char **);
+int init_tab(ssize_t **, const char *, size_t *);
 
 /* usage.c */
 void usage(const char **, const char *);
