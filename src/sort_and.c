@@ -31,5 +31,6 @@ int sortAndC(const char *algo, const char *file)
 	ms = (clock() - timer) * 1000 / CLOCKS_PER_SEC;
 	dump_tab(tab, size);
 	printf("\nComputation time : %ld.%lds\n", ms / 1000, ms % 1000);
+	free(tab);
 	return (EXIT_SUCCESS);
 }
