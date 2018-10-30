@@ -12,7 +12,9 @@ void bubble_sort(ssize_t *tab, size_t size)
 		for (size_t i = 0; i < size - 1; i++) {
 			if (tab[i] > tab[i + 1]) {
 				sorted = false;
-				SWAP(tab[i], tab[i + 1]);
+				SWAP(
+				     tab[i],
+				     tab[i + 1]);
 			}
 		}
 	}
