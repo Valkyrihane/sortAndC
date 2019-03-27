@@ -50,8 +50,8 @@ void insertion_sort(ssize_t [], size_t);
 typedef void (*fptr)(ssize_t [], size_t);
 
 static const fptr fptr_tab[] = {
-	&raddix_sort,
+        &raddix_sort,
 	&selection_sort,
 	&bubble_sort,
-	&insertion_sort,
+        &insertion_sort,
 };
